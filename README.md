@@ -29,3 +29,11 @@ The pipeline ingests raw NYC Taxi trip data, transforms it, and loads it into a 
    ```bash
    git clone https://github.com/<your-username>/data-engineering-pipeline.git
    cd data-engineering-pipeline
+   ```
+2. Start Airflow + Postgres with Docker:
+   ```bash
+   docker-compose up -d
+   ```
+3. Access Airflow UI at http://localhost:8080
+4. Trigger the DAG: nyc_taxi_pipeline
+
